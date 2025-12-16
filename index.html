@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bull or Bear? - 多空快手</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Inter:wght@400;600;800&display=swap');
+      
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0f172a; /* Slate 900 */
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      
+      /* CRT/Retro Effect Overlay */
+      .scanline {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0) 50%,
+          rgba(0, 0, 0, 0.1) 50%,
+          rgba(0, 0, 0, 0.1)
+        );
+        background-size: 100% 4px;
+        pointer-events: none;
+        z-index: 50;
+        opacity: 0.3;
+      }
+      
+      .neon-green-text {
+        text-shadow: 0 0 5px #4ade80, 0 0 10px #4ade80;
+      }
+      .neon-red-text {
+        text-shadow: 0 0 5px #f87171, 0 0 10px #f87171;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <div class="scanline"></div>
+  </body>
+</html>
