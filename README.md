@@ -1,20 +1,14 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Bull or Bear? · 多空快手
 
-# Run and deploy your AI Studio app
+A short chart-direction game built with React and TypeScript. The player chooses a direction, sees the round result and receives a final score.
 
-This contains everything you need to run your app locally.
+`components/CandleChart.tsx` renders the chart, `services/marketGenerator.ts` supplies game data, and `components/ResultScreen.tsx` presents the result. The game and personality text are entertainment; they do not establish trading skill or strategy returns.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1tTUB4UjmZhBY52foIHY08n9YZngrHzSw
+## Run locally
 
-## Run Locally
+```bash
+npm install
+npm run dev
+```
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Build with `npm run build`. These commands follow `package.json`; no new runtime validation was performed for this README update.
